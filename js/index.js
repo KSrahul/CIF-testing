@@ -63,7 +63,7 @@ window.onload = function() {
 
     if ($(window).width() < 716) {
         function topScroll() {
-            if (window.pageYOffset > 546) {
+            if (window.pageYOffset >= 546) {
                 document.querySelector(".backTop").classList.add("showBackTop")
             } else {
                 document.querySelector(".backTop").classList.remove("showBackTop")
@@ -80,13 +80,13 @@ window.onload = function() {
     }
 
 
-    window.addEventListener("resize", function() {
-        if (window.matchMedia("(max-width: 716px)").matches) {
-            if ($(window).width() < 716) {
-                location.reload();
-            } else {
-                location.reload();
-            }
-        }
-    });
+    // window.addEventListener("resize", function() {
+    //     if (window.matchMedia("(max-width: 716px)").matches) {
+    //         if ($(window).width() < 716) {
+    //             location.reload();
+    //         } else {
+    //             location.reload();
+    //         }
+    //     }
+    // });
 }
