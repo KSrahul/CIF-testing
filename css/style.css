@@ -76,7 +76,7 @@ p {
 }
 
 .eightyBottom {
-    padding-bottom: 70px;
+    padding-bottom: 60px;
 }
 
 .bottomFouty,
@@ -309,7 +309,11 @@ p {
 /*For  Approach section */
 
 .approachImgCont .offWhite h2 {
-    font-weight: bold;
+    font-weight: 500;
+}
+
+.approachIcon {
+    padding-bottom: 10px;
 }
 
 .approachImgCont h1 {
@@ -371,9 +375,9 @@ p {
 
 .timeLineCol {
     width: 24%;
-    border-left: 1px solid #353535;
+    border-left: 2px solid #353535;
     padding-left: 0.9%;
-    padding-bottom: 17px;
+    padding-bottom: 40px;
 }
 
 .timeLineCol h2 {
@@ -398,6 +402,12 @@ p {
 .time2 {
     margin: 0 auto;
     margin-left: 28%;
+}
+
+.timeLineBottom1,
+.timeLineBottom2 {
+    height: fit-content;
+    padding-bottom: 0;
 }
 
 .timeLineBottom1 {
@@ -429,7 +439,7 @@ p {
 }
 
 .teamDes p {
-    padding: 20px 0px 40px 0px;
+    padding: 10px 0px 40px 0px;
 }
 
 .ourTeamInternal .teamDes:last-child p {
@@ -474,15 +484,26 @@ p {
 /* For our Career section*/
 
 .mailTO {
+    position: relative;
     color: #057158;
-    border-bottom: 1px solid;
+    /* border-bottom: 1px solid; */
+}
+
+.mailTO::after {
+    content: "";
+    position: absolute;
+    background-color: #057158;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    width: calc(100% - 6px);
 }
 
 
 /* For our Career section (End)*/
 
 
-/* For our Contact section*/
+/* For Contact section*/
 
 .contactDetails:last-child {
     padding-bottom: 0;
@@ -507,7 +528,7 @@ p {
     backdrop-filter: blur(2px);
     background-color: #1c1c1c;
     color: #a5a5a5;
-    padding: 20px 4%;
+    padding: 18px 4%;
 }
 
 .spaceBetween {
@@ -520,7 +541,11 @@ p {
 
 .copyRight p,
 .footerSocial li a {
+    font-family: Arimo;
     font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: right;
 }
 
 .footerSocial li a {
@@ -547,20 +572,25 @@ p {
 }
 
 .contactInternal {
-    padding: 80px 5%;
+    padding: 70px 5%;
 }
 
 .careerCol {
     width: 56%;
-    padding: 0px 4% 0% 7.6%;
+    padding: 184px 4% 70px 7.6%;
 }
 
 .widthFiftyPer {
     /* width: 50%; */
 }
 
+.careerInternal .noPadding h1 {
+    line-height: initial;
+    padding-top: 0;
+}
 
-/* For our Contact section (End)*/
+
+/* For Contact section (End)*/
 
 .backTop {
     transition: 0.5s;
@@ -603,13 +633,13 @@ p {
 
 @media(max-width: 716px) {
     .landing {
-        background-image: url(../assets/images/bannerMobile.jpg);
+        /* background-image: url(../assets/images/bannerMobile.jpg); */
         height: auto;
         filter: grayscale(100%);
     }
     .bannerPara p {
         font-size: 18px;
-        text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        /* text-shadow: 0 0 15px rgba(0, 0, 0, 0.5); */
     }
     .headerMenus {
         padding-top: 20px;
@@ -741,11 +771,11 @@ p {
     .timeLineCol {
         border-top: 1px solid;
         border-left: 0;
-        padding: 10px 10px 20px 10px;
+        padding: 10px 10px 40px 10px;
     }
     .timeLineCol h2 {
         /* font-size: 18px; */
-        padding-top: 10px;
+        /* padding-top: 10px; */
     }
     .timeLineCont .timeLineBor,
     .bottomTimeLine,
