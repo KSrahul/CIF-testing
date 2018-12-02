@@ -676,6 +676,16 @@ p {
 }
 
 @media(max-width: 600px) {
+    .fontTwentyFour h1,
+    .fontTwentyFour h2,
+    .timeLineCol h2,
+    .teamDes h5,
+    .contactDetails h6,
+    .careerInternal .fontTwentyFour h1,
+    .bannerPara p,
+    .copyRight p {
+        font-family: -webkit-body;
+    }
     .hiringPara {
         display: block;
         padding-top: 10px;
