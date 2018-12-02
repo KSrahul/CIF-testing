@@ -565,7 +565,7 @@ p {
 .backTop {
     transition: 0.5s;
     position: fixed;
-    bottom: 29%;
+    bottom: 40px;
     right: 14px;
     cursor: pointer;
     transform: scale(0);
