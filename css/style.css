@@ -1,0 +1,815 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-size: 18px !important;
+}
+
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0 !important;
+    list-style-type: none;
+    margin-bottom: 0 !important;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    /* color: inherit !important; */
+}
+
+a:focus {
+    outline: 0px auto -webkit-focus-ring-color !important;
+    text-decoration: none !important;
+    outline-offset: 0px !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+@font-face {
+    font-family: "Arimo";
+    src: url(../assets/fonts/Arimo/Arimo-Regular.ttf);
+}
+
+*,
+p {
+    font-family: Arimo;
+}
+
+
+/* Standar CSS */
+
+.fullWidth {
+    width: 100%;
+}
+
+.fiftyTwo {
+    padding: 0px 5%;
+}
+
+.oneThirtyTwoLeft {
+    padding: 0px 13%;
+}
+
+.oneThirtyTwoRight {
+    padding-right: 14%;
+}
+
+.twentyThreeLeft {
+    padding-left: 2%;
+}
+
+.eightyEighty {
+    padding: 70px 0px;
+}
+
+.eightyBottom {
+    padding-bottom: 70px;
+}
+
+.bottomFouty,
+.contactDetails {
+    padding-bottom: 40px;
+}
+
+.widthSixtyFour {
+    width: 64.5%;
+}
+
+
+/* Standar CSS (End) */
+
+
+/* For Header css */
+
+.blurHeader {
+    background-image: url(../assets/images/blueImg.jpg);
+    /* background-color: rgba(237, 237, 237, 0.9); */
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    height: 80px;
+    filter: blur(20px);
+    display: none;
+}
+
+.logoContainer {
+    /* width: 374px; */
+    width: 43.4%;
+}
+
+.headerMenus {}
+
+.logo img {
+    transition: 0.3s;
+    width: 240px;
+}
+
+.logo.logoSmall img {
+    width: 108px;
+}
+
+
+/* .header::before {
+    content: "";
+    background-image: url(../assets/images/bg-clouds.png);
+} */
+
+.header.fixed {
+    background-color: rgba(237, 237, 237, 0.9);
+    position: fixed;
+    margin-top: 0px;
+    top: 0;
+}
+
+.header.fixed .pageLinks {
+    /* padding-left: 23%; */
+}
+
+.header {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    /* justify-content: space-between; */
+    padding: 23px 5%;
+    /* margin-top: 220px; */
+    margin-top: 50px;
+    display: flex;
+    z-index: 20;
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flexOne {
+    flex: 1;
+}
+
+.itemCenter {
+    align-items: center;
+}
+
+.pageLinks {
+    /* padding-left: 10%; */
+    flex: 1;
+    justify-content: space-between;
+}
+
+.pageLinks li a {
+    text-transform: uppercase;
+    /* font-family: Arimo; */
+    text-decoration: none;
+    position: relative;
+    /* margin-right: 40px; */
+    color: #1c1c1c;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.navLinks:hover {
+    /* color: #057158; */
+}
+
+.pageLinks li a::after {
+    background-color: #057158;
+    transition: 0.3s;
+    margin: 0 auto;
+    display: block;
+    content: "";
+    height: 2px;
+    bottom: 0;
+    width: 0px;
+}
+
+.pageLinks li a.active::after,
+.navLinks:hover::after {
+    width: 100%;
+}
+
+.menuLinks {
+    align-items: center;
+    display: flex;
+    line-height: initial;
+}
+
+
+/* Header css end here */
+
+
+/* For Landing image */
+
+.landing {
+    background-image: url(../assets/images/landing.png);
+    /* height: -webkit-fill-available; */
+    height: 680px;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bannerImgContent {
+    padding-top: 65px;
+}
+
+.bannerPara p {
+    font-family: PublicoBanner-Roman;
+    /* text-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    line-height: 1.42;
+    letter-spacing: 0; */
+    color: #ededed;
+    font-size: 32px;
+}
+
+.bannerPara {
+    width: 80%;
+}
+
+
+/* For Landing image (End) */
+
+
+/* For why now Section */
+
+.paraRightPadding p {
+    padding-right: 19%;
+}
+
+.approachParaImg {
+    margin-left: auto;
+    position: relative;
+    padding-right: 14%;
+}
+
+.sectionOne .oneThirtyTwoRight .whyNowText div:last-child {
+    padding-bottom: 0;
+}
+
+.whyNowImg img {
+    padding-right: 3%;
+}
+
+.whyNowImg {
+    padding: 180px 0px;
+}
+
+.fontTwentyFour h1,
+.fontTwentyFour h2,
+.timeLineCol h2,
+.teamDes h5,
+.contactDetails h6,
+.careerInternal .fontTwentyFour h1 {
+    font-family: PublicoBanner-Roman;
+    font-size: 26px;
+    line-height: 1.42;
+    color: #353535;
+    padding-bottom: 10px;
+}
+
+.fontTwentyFour h1 {
+    font-size: 32px;
+}
+
+.bottomTwenty h1 {
+    padding-bottom: 20px;
+}
+
+.noPadding h1 {
+    padding-bottom: 0;
+}
+
+.botomTwentyPara p {
+    padding-bottom: 20px;
+}
+
+.botomTwentyPara p:last-child {
+    padding-bottom: 0;
+}
+
+.offWhite * {
+    color: #ededed !important;
+}
+
+
+/* For why now Section (End) */
+
+
+/*For  Approach section */
+
+.approachImgCont .offWhite h2 {
+    font-weight: bold;
+}
+
+.approachImgCont h1 {
+    padding-bottom: 0;
+}
+
+.approachImgCont .widthSixtyFour p {
+    /* font-size: 18px;
+    line-height: 1.77; */
+}
+
+.approachBack {
+    padding-right: 0;
+    background-color: #057158;
+    position: relative;
+    /* background-image: url(../assets/images/approachImg.png);
+    height: -webkit-fill-available;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.approachImgCont {
+    /* position: absolute;
+    left: 13%;
+    top: 13%; */
+}
+
+.whyNowPeo {
+    /* position: absolute;
+    right: 4%;
+    top: 144px; */
+    position: absolute;
+    right: 6%;
+    bottom: 88px;
+}
+
+.whyNowPeo img {
+    /* width: 100%; */
+}
+
+
+/*For  Approach section (End)*/
+
+
+/* For timeline Section */
+
+.sixtySixPer {
+    width: 66%;
+}
+
+.timeLineCont {
+    padding-top: 126px;
+}
+
+.timeLineBor {
+    border-bottom: 11px solid #057158;
+}
+
+.timeLineCol {
+    width: 24%;
+    border-left: 1px solid #353535;
+    padding-left: 0.9%;
+    padding-bottom: 17px;
+}
+
+.timeLineCol h2 {
+    /* font-family: PublicoBanner-Roman;
+    font-size: 26px;
+    color: #353535; */
+    padding-bottom: 20px;
+}
+
+.timeLineCol p,
+.teamDes p,
+.contactDetails p,
+#timeline .fiftyTwo p,
+.whyNowText .bottomFouty p,
+.approachImgCont .widthSixtyFour p,
+.careerInternal p {
+    font-size: 18px;
+    line-height: 1.77;
+    color: #353535;
+}
+
+.time2 {
+    margin: 0 auto;
+    margin-left: 28%;
+}
+
+.timeLineBottom1 {
+    margin-left: 26%;
+}
+
+.timeLineBottom2 {
+    margin-left: 30%;
+}
+
+.timeLineBottom {
+    padding-top: 40px;
+}
+
+
+/* For timeline Section (End)*/
+
+
+/* For our team section */
+
+.ourTeamMain {
+    background-color: #ededed;
+}
+
+.ourTeamInternal {
+    width: 56%;
+    margin-left: auto;
+    padding-right: 11%;
+}
+
+.teamDes p {
+    padding: 20px 0px 40px 0px;
+}
+
+.ourTeamInternal .teamDes:last-child p {
+    padding-bottom: 0;
+}
+
+.teamDes h5,
+.contactDetails h6,
+.careerInternal .fontTwentyFour h1 {
+    /* padding: 20px 0px 10px 0px; */
+    /* padding-bottom: 10px; */
+    line-height: unset;
+    /* font-family: PublicoBanner-Roman;
+    font-size: 26px;
+    color: #353535; */
+    padding: 10px 0px;
+}
+
+.teamDes h6 {
+    /* font-family: Arimo; */
+    font-size: 18px;
+    font-weight: bold;
+    color: #057158;
+}
+
+.careerInternal {
+    /* padding: 0px 13%; */
+    width: 86%;
+}
+
+.careerInternal p {
+    /* font-family: PublicoBanner-Roman;
+    font-size: 16px;
+    line-height: 1.62;
+    color: #353535; */
+}
+
+
+/* For our team section (End)*/
+
+
+/* For our Career section*/
+
+.mailTO {
+    color: #057158;
+    border-bottom: 1px solid;
+}
+
+
+/* For our Career section (End)*/
+
+
+/* For our Contact section*/
+
+.contactDetails:last-child {
+    padding-bottom: 0;
+}
+
+.contactDetails h6 {
+    /* padding-top: 0;
+    padding-bottom: 20px; */
+    padding-bottom: 10px;
+    padding-top: 0;
+}
+
+.contactDetails p {}
+
+.socialLinks {
+    color: #353535;
+    border-bottom: 1px solid;
+}
+
+.footer {
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    background-color: #1c1c1c;
+    color: #a5a5a5;
+    padding: 20px 4%;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.copyRight p {
+    font-family: PublicoBanner-Roman;
+}
+
+.copyRight p,
+.footerSocial li a {
+    font-size: 12px;
+}
+
+.footerSocial li a {
+    border: none;
+    color: #a5a5a5;
+    margin-right: 43%;
+}
+
+.footerSocial li:last-child a {
+    margin-right: 0;
+}
+
+.contactInternal {
+    background-color: #057158;
+}
+
+.contactInternal .fontTwentyFour h1,
+.contactDetails * {
+    color: #ffffff !important;
+}
+
+.contactInternal {
+    width: 44%;
+}
+
+.contactInternal {
+    padding: 80px 5%;
+}
+
+.careerCol {
+    width: 56%;
+    padding: 0px 4% 0% 7.6%;
+}
+
+.widthFiftyPer {
+    /* width: 50%; */
+}
+
+
+/* For our Contact section (End)*/
+
+.backTop {
+    transition: 0.5s;
+    position: fixed;
+    bottom: 29%;
+    right: 14px;
+    cursor: pointer;
+    transform: scale(0);
+}
+
+.backTop.showBackTop {
+    transform: scale(1);
+}
+
+
+/* For Mobile Responsiveness */
+
+
+/* 
+@media(max-width: 962px) {
+    .header {
+        margin-top: 132px;
+    }
+} */
+
+@media(max-width: 754px) {
+    .pageLinks {
+        /* padding-left: 2%; */
+    }
+    .header {
+        padding: 23px 2%;
+    }
+}
+
+@media(min-width: 716px) {
+    .backTop {
+        transform: scale(0)
+    }
+}
+
+@media(max-width: 716px) {
+    .landing {
+        background-image: url(../assets/images/bannerMobile.jpg);
+        height: auto;
+        filter: grayscale(100%);
+    }
+    .bannerPara p {
+        font-size: 18px;
+        text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+    .headerMenus {
+        padding-top: 20px;
+    }
+    .header {
+        flex-direction: column;
+        padding: 0;
+        margin-top: 40px;
+    }
+    .bannerPara,
+    .pageLinks li a {
+        padding: 0;
+        margin: 0;
+    }
+    .bannerPara {
+        width: 100%;
+    }
+    /* .pageLinks {
+        flex-direction: column;
+        column-count: 2;
+        column-fill: auto;
+        display: block;
+        padding-left: 0;
+    } */
+    .logo img {
+        width: 128px;
+    }
+    .bannerImgContent {
+        padding: 40px 30px;
+    }
+    .menuLinks {
+        padding-bottom: 10px;
+    }
+}
+
+@media(max-width: 600px) {
+    .hiringPara {
+        display: block;
+        padding-top: 10px;
+    }
+    .teamDes p {
+        padding: 10px 0px 40px 0px;
+    }
+    .teamDes h5,
+    .contactDetails h6 {
+        padding: 5px 0px;
+    }
+    .pageLinks {
+        flex-direction: column;
+        column-count: 2;
+        column-fill: auto;
+        display: block;
+        padding-left: 0;
+    }
+    .whyNowImg {
+        display: none;
+    }
+    .eightyEighty,
+    .approachBack,
+    .contactInternal,
+    .careerCol {
+        padding: 30px 30px;
+    }
+    .sectionOne .oneThirtyTwoRight,
+    .sectionThree .sixtySixPer,
+    .timeLineBottom,
+    .approachImgCont,
+    .approachParaImg {
+        padding: 0;
+    }
+    .whyNowText .eightyBottom,
+    .ourTeamInternal .eightyBottom,
+    .contactInternal .eightyBottom,
+    .careerInternal .fontTwentyFour {
+        padding-bottom: 30px;
+    }
+    .whyNowText :last-child {
+        padding-bottom: 0;
+    }
+    .sectionThree .sixtySixPer,
+    .timeLineCol,
+    .ourTeamInternal,
+    .careerInternal,
+    .contactInternal,
+    .careerCol {
+        width: 100%;
+    }
+    .timeLineCol p,
+    .teamDes p,
+    .contactDetails p,
+    #timeline .fiftyTwo p,
+    .whyNowText .bottomFouty p,
+    .approachImgCont .widthSixtyFour p,
+    .careerInternal p {
+        font-size: 12px;
+    }
+    .fontTwentyFour h1,
+    .fontTwentyFour h2,
+    .timeLineCol h2,
+    .teamDes h5,
+    .contactDetails h6,
+    .careerInternal .fontTwentyFour h1,
+    .approachImgCont .widthSixtyFour .offWhite h2,
+    .timeLineCol h2 {
+        font-size: 18px;
+    }
+    .timeLineCont {
+        margin-top: 40px;
+        padding: 0;
+        border-left: 11px solid #057158;
+    }
+    .timeLineBor,
+    .bottomTimeLine,
+    .contactSection {
+        border: none;
+        flex-direction: column;
+    }
+    .timeLineBor {
+        padding-top: 12px !important;
+    }
+    .time2,
+    .timeLineBottom1,
+    .bottomTimeLine .timeLineBottom2,
+    .approachParaImg,
+    .approachImgCont .widthSixtyFour {
+        width: 100%;
+        margin-left: 0;
+    }
+    .timeLineCol {
+        border-top: 1px solid;
+        border-left: 0;
+        padding: 10px 10px 20px 10px;
+    }
+    .timeLineCol h2 {
+        /* font-size: 18px; */
+        padding-top: 10px;
+    }
+    .timeLineCont .timeLineBor,
+    .bottomTimeLine,
+    .ourTeamInternal,
+    .careerInternal,
+    .paraRightPadding p,
+    .careerInternal .fontTwentyFour h1 {
+        padding: 0;
+    }
+    .teamDes h6 {
+        font-size: 13px;
+    }
+    .approachImgCont .eightyBottom h1,
+    .fontTwentyFour h1 {
+        font-size: 24px;
+    }
+    .approachImgCont .eightyBottom h1 {
+        text-align: center;
+    }
+    .whyNowPeo {
+        display: none;
+    }
+    .approachImgCont .eightyBottom,
+    .approachParaImg {
+        padding-bottom: 40px;
+    }
+    .approachIcon img {
+        width: 32px;
+    }
+    /* .approachImgCont .widthSixtyFour .offWhite h2 {
+        font-size: 18px;
+    } */
+    .approachImgCont .widthSixtyFour .offWhite h2,
+    .approachIcon {
+        padding-bottom: 10px;
+    }
+}
+
+@media(max-width:500px) {
+    .footer {
+        flex-direction: column;
+    }
+    .footerSocial {
+        padding-top: 20px;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .footerSocial li {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .footerSocial li a {
+        margin-right: 0;
+    }
+    .copyRight {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    /* .footerPages {
+        display: flex;
+        justify-content: space-between;
+    } */
+}
+
+
+/* For Mobile Responsiveness (End)*/
