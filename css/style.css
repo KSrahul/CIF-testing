@@ -371,6 +371,7 @@ p {
 
 .timeLineBor {
     border-bottom: 11px solid #057158;
+    align-items: flex-end;
 }
 
 .timeLineCol {
@@ -676,6 +677,10 @@ p {
 }
 
 @media(max-width: 600px) {
+    .bottomFouty,
+    .contactDetails {
+        padding-bottom: 30px;
+    }
     .fontTwentyFour h1,
     .fontTwentyFour h2,
     .timeLineCol h2,
