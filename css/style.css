@@ -2,10 +2,10 @@ html,
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 body {
-    overflow-x: hidden;
     font-size: 18px !important;
 }
 
@@ -84,8 +84,8 @@ p {
     padding-bottom: 40px;
 }
 
-.widthSixtyFour {
-    width: 64.5%;
+.widthSixty {
+    width: 60%;
 }
 
 
@@ -218,6 +218,7 @@ p {
     background-position: 100% 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 .bannerImgContent {
@@ -237,6 +238,47 @@ p {
     width: 80%;
 }
 
+.bannerTiny img {
+    width: 100%;
+    height: 100%;
+}
+
+.transImg {
+    display: none;
+}
+
+.transImg {
+    position: absolute;
+    /* top: 0; */
+    width: 100%;
+    z-index: 11;
+}
+
+.transImg img {
+    width: 100%;
+}
+
+.bannerTiny {
+    top: 0;
+    height: 100%;
+    padding: 0px 3%;
+}
+
+.moreVisible {
+    position: relative;
+    z-index: 999;
+}
+
+.bottom0 {
+    bottom: calc(0px - 2px);
+    z-index: 10;
+    display: block;
+}
+
+.bottom0 img {
+    /* width: 100%; */
+}
+
 
 /* For Landing image (End) */
 
@@ -244,26 +286,28 @@ p {
 /* For why now Section */
 
 .paraRightPadding p {
-    padding-right: 19%;
+    /* padding-right: 19%; */
 }
 
 .approachParaImg {
     margin-left: auto;
     position: relative;
-    padding-right: 14%;
+    padding-left: 2%;
 }
 
 .sectionOne .oneThirtyTwoRight .whyNowText div:last-child {
     padding-bottom: 0;
 }
 
-.whyNowImg img {
+
+/* .whyNowImg img {
     padding-right: 3%;
+    display: none;
 }
 
 .whyNowImg {
     padding: 180px 0px;
-}
+} */
 
 .fontTwentyFour h1,
 .fontTwentyFour h2,
@@ -302,11 +346,46 @@ p {
     color: #ededed !important;
 }
 
+.whyNowFirstImg {
+    padding: 0px 13% 0px 4%;
+    height: 900px;
+}
+
+.whyNowSecondImg {
+    padding: 0px 5% 0 13%;
+    bottom: 0;
+    height: 800px;
+}
+
+#whyNow .oneThirtyTwoRight,
+.approachBack,
+.ourTeamMain {
+    position: relative;
+}
+
 
 /* For why now Section (End) */
 
 
 /*For  Approach section */
+
+.topLayer img,
+.bottomLayer img {
+    width: 100%;
+}
+
+.topBottom {
+    position: absolute;
+    width: 100%;
+}
+
+.topLayer {
+    top: calc(0px - 1px);
+}
+
+.bottomLayer {
+    bottom: calc(0px - 2px);
+}
 
 .approachImgCont .offWhite h2 {
     font-weight: 500;
@@ -320,20 +399,20 @@ p {
     padding-bottom: 0;
 }
 
-.approachImgCont .widthSixtyFour p {
+.approachImgCont .widthSixty p {
     /* font-size: 18px;
     line-height: 1.77; */
 }
 
 .approachBack {
-    padding-right: 0;
+    /* padding-right: 0;
     background-color: #057158;
-    position: relative;
-    /* background-image: url(../assets/images/approachImg.png);
-    height: -webkit-fill-available;
+    position: relative; */
+    background-image: url(../assets/images/approachImg.png);
+    /* height: -webkit-fill-available; */
     background-position: 100% 100%;
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover;
 }
 
 .approachImgCont {
@@ -349,10 +428,15 @@ p {
     position: absolute;
     right: 6%;
     bottom: 88px;
+    display: none;
 }
 
 .whyNowPeo img {
     /* width: 100%; */
+}
+
+.approachImgCont {
+    padding: 70px 13%;
 }
 
 
@@ -393,7 +477,7 @@ p {
 .contactDetails p,
 #timeline .fiftyTwo p,
 .whyNowText .bottomFouty p,
-.approachImgCont .widthSixtyFour p,
+.approachImgCont .widthSixty p,
 .careerInternal p {
     font-size: 18px;
     line-height: 1.77;
@@ -430,13 +514,21 @@ p {
 /* For our team section */
 
 .ourTeamMain {
-    background-color: #ededed;
+    /* background-color: #ededed; */
+    background-image: url(../assets/images/ourTeamBack.png);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.ourTeamInternal {}
 
 .ourTeamInternal {
     width: 56%;
     margin-left: auto;
-    padding-right: 11%;
+    /* padding-right: 11%;
+    padding-bottom: 80px; */
+    padding: 40px 11% 40px 0%;
 }
 
 .teamDes p {
@@ -506,6 +598,19 @@ p {
 
 /* For Contact section*/
 
+.contactCutLayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contactCutLayer img {
+    height: 100%;
+    width: 100%;
+}
+
 .contactDetails:last-child {
     padding-bottom: 0;
 }
@@ -559,8 +664,18 @@ p {
     margin-right: 0;
 }
 
+.contactBack {
+    background-image: url(../assets/images/contectGreen.png);
+    background-position: 100% 100%;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    width: 50%;
+    position: relative;
+}
+
 .contactInternal {
-    background-color: #057158;
+    /* background-color: #057158; */
+    padding: 170px 9%;
 }
 
 .contactInternal .fontTwentyFour h1,
@@ -568,17 +683,13 @@ p {
     color: #ffffff !important;
 }
 
-.contactInternal {
-    width: 44%;
-}
+.contactInternal {}
 
-.contactInternal {
-    padding: 70px 5%;
-}
+.contactInternal {}
 
 .careerCol {
-    width: 56%;
-    padding: 184px 4% 70px 7.6%;
+    width: 50%;
+    padding: 292px 0% 290px 2%;
 }
 
 .widthFiftyPer {
@@ -632,11 +743,51 @@ p {
     }
 }
 
+.deskBottomLayer {
+    display: block;
+}
+
+.mobBottomLayer {
+    display: none;
+}
+
+@media(max-width: 400px) {
+    .deskBottomLayer {
+        display: none;
+    }
+    .landing {
+        background-image: url(../assets/images/landingSectionMobile.png);
+        height: auto;
+        /* filter: grayscale(100%); */
+    }
+    .mobBottomLayer {
+        display: block;
+    }
+    .eightyEighty {
+        padding-top: 0;
+    }
+    .bottomLayer {
+        bottom: calc(0px - 2px);
+    }
+    .approachImgCont,
+    #ourTeam .ourTeamInternal {
+        padding-top: 50px;
+    }
+    .contactBack {
+        background-image: url(../assets/images/mobContectGreen.png);
+        text-align: center;
+        height: 610px;
+        display: flex;
+        align-items: center;
+    }
+    #contactUs {
+        margin-top: -40px;
+    }
+}
+
 @media(max-width: 716px) {
     .landing {
-        /* background-image: url(../assets/images/bannerMobile.jpg); */
-        height: auto;
-        filter: grayscale(100%);
+        height: 480px;
     }
     .bannerPara p {
         font-size: 18px;
@@ -712,8 +863,7 @@ p {
     .whyNowImg {
         display: none;
     }
-    .eightyEighty,
-    .approachBack,
+    .approachImgCont,
     .contactInternal,
     .careerCol {
         padding: 30px 30px;
@@ -722,8 +872,13 @@ p {
     .sectionThree .sixtySixPer,
     .timeLineBottom,
     .approachImgCont,
-    .approachParaImg {
+    .timeLineCont,
+    .ourTeamInternal {
+        padding: 30px 30px;
+    }
+    .timeLineCont {
         padding: 0;
+        margin: 0px 30px;
     }
     .whyNowText .eightyBottom,
     .ourTeamInternal .eightyBottom,
@@ -739,7 +894,8 @@ p {
     .ourTeamInternal,
     .careerInternal,
     .contactInternal,
-    .careerCol {
+    .careerCol,
+    .contactBack {
         width: 100%;
     }
     .timeLineCol p,
@@ -747,7 +903,7 @@ p {
     .contactDetails p,
     #timeline .fiftyTwo p,
     .whyNowText .bottomFouty p,
-    .approachImgCont .widthSixtyFour p,
+    .approachImgCont .widthSixty p,
     .careerInternal p {
         font-size: 12px;
     }
@@ -757,13 +913,13 @@ p {
     .teamDes h5,
     .contactDetails h6,
     .careerInternal .fontTwentyFour h1,
-    .approachImgCont .widthSixtyFour .offWhite h2,
+    .approachImgCont .widthSixty .offWhite h2,
     .timeLineCol h2 {
         font-size: 18px;
     }
     .timeLineCont {
         margin-top: 40px;
-        padding: 0;
+        /* padding: 0; */
         border-left: 11px solid #057158;
     }
     .timeLineBor,
@@ -779,7 +935,7 @@ p {
     .timeLineBottom1,
     .bottomTimeLine .timeLineBottom2,
     .approachParaImg,
-    .approachImgCont .widthSixtyFour {
+    .approachImgCont .widthSixty {
         width: 100%;
         margin-left: 0;
     }
@@ -794,7 +950,6 @@ p {
     }
     .timeLineCont .timeLineBor,
     .bottomTimeLine,
-    .ourTeamInternal,
     .careerInternal,
     .paraRightPadding p,
     .careerInternal .fontTwentyFour h1 {
@@ -820,10 +975,10 @@ p {
     .approachIcon img {
         width: 32px;
     }
-    /* .approachImgCont .widthSixtyFour .offWhite h2 {
+    /* .approachImgCont .widthSixty .offWhite h2 {
         font-size: 18px;
     } */
-    .approachImgCont .widthSixtyFour .offWhite h2,
+    .approachImgCont .widthSixty .offWhite h2,
     .approachIcon {
         padding-bottom: 10px;
     }
