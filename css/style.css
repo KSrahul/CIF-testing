@@ -118,7 +118,7 @@ p {
 }
 
 .logo.logoSmall img {
-    width: 108px;
+    width: 150px;
 }
 
 
@@ -132,6 +132,7 @@ p {
     position: fixed;
     margin-top: 0px;
     top: 0;
+    padding: 17px 5%;
 }
 
 .header.fixed .pageLinks {
@@ -641,10 +642,6 @@ p {
     justify-content: space-between;
 }
 
-.copyRight p {
-    font-family: PublicoBanner-Roman;
-}
-
 .copyRight p,
 .footerSocial li a {
     font-family: Arimo;
@@ -652,6 +649,10 @@ p {
     font-weight: normal;
     letter-spacing: 1px;
     text-align: right;
+}
+
+.copyRight p {
+    font-family: PublicoBanner-Roman;
 }
 
 .footerSocial li a {
@@ -665,7 +666,7 @@ p {
 }
 
 .contactBack {
-    background-image: url(../assets/images/contectGreen.png);
+    /* background-image: url(../assets/images/contectGreen.png); */
     background-position: 100% 100%;
     /* background-repeat: no-repeat; */
     background-size: cover;
@@ -676,6 +677,9 @@ p {
 .contactInternal {
     /* background-color: #057158; */
     padding: 170px 9%;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 .contactInternal .fontTwentyFour h1,
@@ -689,7 +693,7 @@ p {
 
 .careerCol {
     width: 50%;
-    padding: 292px 0% 290px 2%;
+    padding: 292px 0% 0px 2%;
 }
 
 .widthFiftyPer {
@@ -737,7 +741,7 @@ p {
     }
 }
 
-@media(min-width: 716px) {
+@media(min-width: 768px) {
     .backTop {
         transform: scale(0)
     }
@@ -751,12 +755,18 @@ p {
     display: none;
 }
 
-@media(max-width: 400px) {
+@media(max-width: 768px) {
+    .header.fixed {
+        background-color: unset;
+        position: unset;
+        margin-top: 0px;
+        top: 0;
+    }
     .deskBottomLayer {
         display: none;
     }
     .landing {
-        background-image: url(../assets/images/landingSectionMobile.png);
+        /* background-image: url(../assets/images/landingSectionMobile.png); */
         height: auto;
         /* filter: grayscale(100%); */
     }
@@ -769,12 +779,12 @@ p {
     .bottomLayer {
         bottom: calc(0px - 2px);
     }
-    .approachImgCont,
+    /* .approachImgCont,
     #ourTeam .ourTeamInternal {
         padding-top: 50px;
-    }
+    } */
     .contactBack {
-        background-image: url(../assets/images/mobContectGreen.png);
+        /* background-image: url(../assets/images/mobContectGreen.png); */
         text-align: center;
         height: 610px;
         display: flex;
@@ -785,7 +795,13 @@ p {
     }
 }
 
-@media(max-width: 716px) {
+@media(max-width: 768px) {
+    .contactInternal {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
     .landing {
         height: 480px;
     }
@@ -818,16 +834,20 @@ p {
     } */
     .logo img {
         width: 128px;
+        height: 60px;
     }
     .bannerImgContent {
         padding: 40px 30px;
+        display: flex;
+        height: 100%;
+        align-items: center;
     }
     .menuLinks {
         padding-bottom: 10px;
     }
 }
 
-@media(max-width: 600px) {
+@media(max-width: 768px) {
     .bottomFouty,
     .contactDetails {
         padding-bottom: 30px;
@@ -854,11 +874,16 @@ p {
         padding: 5px 0px;
     }
     .pageLinks {
-        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
         column-count: 2;
         column-fill: auto;
-        display: block;
+        /* display: block; */
         padding-left: 0;
+    }
+    .menuLinks {
+        width: 50%;
     }
     .whyNowImg {
         display: none;
@@ -885,6 +910,11 @@ p {
     .contactInternal .eightyBottom,
     .careerInternal .fontTwentyFour {
         padding-bottom: 30px;
+    }
+    .approachImgCont,
+    #ourTeam .ourTeamInternal {
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
     .whyNowText :last-child {
         padding-bottom: 0;
@@ -971,6 +1001,7 @@ p {
     .approachImgCont .eightyBottom,
     .approachParaImg {
         padding-bottom: 40px;
+        padding-left: 0;
     }
     .approachIcon img {
         width: 32px;
