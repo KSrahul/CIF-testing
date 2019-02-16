@@ -38,7 +38,6 @@ window.onload = function() {
             });
             // On scroll navigation highlited or active if reach to perticular section (End)
 
-
             var scrollPos = pageYOffset;
             if (scrollPos >= 1) {
                 document.querySelector(".header").classList.remove("fixed");
@@ -80,11 +79,13 @@ window.onload = function() {
     }
     window.addEventListener("resize", function() {
         if (window.matchMedia("(max-width: 768px)").matches) {
-            if ($(window).width() < 768) {
-                location.reload();
-            } else {
-                location.reload();
-            }
+            setTimeout(function() {
+                if ($(window).width() < 768) {
+                    location.reload();
+                } else {
+                    location.reload();
+                }
+            }, 100)
         }
     });
 }
