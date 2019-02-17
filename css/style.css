@@ -769,7 +769,7 @@ p {
 .footer {
     background-color: #1c1c1c;
     color: #a5a5a5;
-    padding: 18px 4%;
+    padding: 22px 4%;
 }
 
 .spaceBetween {
@@ -778,11 +778,9 @@ p {
 
 .copyRight p,
 .footerSocial li a {
-    font-family: Arimo;
     font-size: 12px;
     font-weight: normal;
     letter-spacing: 1px;
-    text-align: right;
 }
 
 .copyRight p {
@@ -792,10 +790,12 @@ p {
 .footerSocial li a {
     border: none;
     color: #a5a5a5;
-    margin-right: 43%;
 }
-
-.footerSocial li:last-child a {
+.footerSocial li{
+    margin-right: 40px;
+    display: flex;
+}
+.footerSocial li:last-child{
     margin-right: 0;
 }
 
